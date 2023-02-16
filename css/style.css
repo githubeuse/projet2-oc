@@ -1,0 +1,998 @@
+/* version bureau/desktop : largeur de l’écran 992px à 1400px max */
+/* version tablette : largeur de l’écran de 768px à 991px */
+/* version mobile : largeur de l’écran inférieure à 768px */
+
+/*appel d'une police google font*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/*ajout de couleurs à la racine, à utiliser ensuite sous forme de variables sous la forme var(--dblue) */
+:root {
+    --grey: #f2f2f2;
+    --lblue: #deebff;
+    --dblue: #0065fc;
+}
+
+
+/* BODY : STYLISATION DE LA POLICE, LARGEUR MAX */
+body {
+    max-width: 1400px;
+    margin: auto;
+    font-family: Raleway;
+}
+
+/* CLASSE BOLD / GRAS */
+.bold {
+    font-weight: 600;
+}
+
+/* CLASSE ICONE BLEUE */
+.blueico {
+    color: var(--dblue);
+    font-size: 0.8em;
+}
+
+/* CLASSE ICONE BLEUE */
+.big-blueico {
+    color: var(--dblue);
+}
+
+/* CLASSE ICONE GRISE */
+.greyico {
+    color: var(--grey);
+    font-size: 0.8em;
+}
+
+
+
+/* DISPLAY FLEX ROW / EN LIGNE */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+/* DISPLAY FLEX COLUMN / EN COLONNE */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* DISTRIBUTION HORIZONTALE DE L'ESPACE ENTRE LES ELEMENTS FLEX */
+.flex-spacebetween {
+    justify-content: space-between;
+}
+
+/* ALIGNEMENT HORIZONTAL A GAUCHE / AU DEBUT DES ELEMENTS FLEX */
+.flex-start {
+    justify-content: flex-start;
+}
+
+/* ESPACE ENTRE LES ELEMENTS FLEX EN COMPTANT LES MARGES EXTERIEURES */
+.flex-evenly {
+    justify-content: space-evenly;
+}
+
+/* ALIGNEMENT VERTICAL SUR LA LIGNE D ECRITURE */
+.flex-baseline {
+    align-items: baseline;
+}
+
+/* ALIGNEMENT VERTICAL AU MILIEU */
+.flex-center {
+    align-items: center;
+}
+
+/* PAS DE RETOUR A LA LIGNE */
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+/* PAS DE RETOUR A LA LIGNE */
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* DISPLAY NONE / PAS D AFFICHAGE */
+.display-none {
+    display: none;
+}
+
+/* LARGEUR A 100 % */
+.width-100 {
+    width: 100%;
+}
+
+
+/* LARGEUR A 90% */
+.width-90 {
+    width: 90%;
+}
+
+/* LARGEUR A 70% */
+.width-70 {
+    width: 70%;
+}
+
+.width-65 {
+    width: 65%;
+}
+
+/* LARGEUR A 60% */
+.width-60 {
+    width: 60%;
+}
+
+/* LARGEUR A 30% */
+.width-30 {
+    width: 30%;
+}
+
+/* LARGEUR A 25% */
+.width-25 {
+    width: 25%;
+}
+
+/* LARGEUR MINIMALE A 171PX - SPEFICIQUE A UNE IMAGE*/
+.min-width-171px {
+    min-width: 171px;
+}
+
+/* LARGEUR DE LA ZONE DE BOUTONS FILTRES */
+.width-btn-filter {
+    width: 900px;
+}
+
+/* LARGEUR MINIMALE DE LA ZONE DE BOUTONS FILTRES */
+.min-width-btn-filter {
+    min-width: 695px
+}
+
+/* GAP DE 3OPX */
+.gap30px {
+    gap: 30px;
+}
+
+/* GAP DE 20 PX */
+.gap20px {
+    gap: 20px;
+}
+
+/* GAP DE 15% */
+.gap15 {
+    gap: 15%;
+}
+
+/* PADDING GAUCHE ET DROITE DE 30PX */
+.padding-rl-40px {
+    padding: 0 40px;
+}
+
+.padding-top-20px {
+    padding-top: 20px;
+}
+
+/* PAS DE PADDING */
+.no-padding {
+    padding: 0px;
+}
+
+/* PADDING GAUCHE DE 5 PX */
+.padding-left-5px {
+    padding-left: 5px;
+}
+
+/* PADDING A L'INTERIEUR DE L'ARTICLE */
+.padding-inside-article-right {
+    padding-top: 8px;
+    padding-left: 12px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+}
+
+
+/* PADDING BAS DE 5 PX */
+.padding-bottom-5px {
+    padding-bottom: 5px;
+}
+
+
+/* PADDING GAUCHE DE 10 PX */
+.padding-left-10px {
+    padding-left: 10px;
+}
+
+/* PADDING BAS DE 60PX, utilisé pour footer */
+.padding-bottom-footer {
+    padding-bottom: 30px;
+}
+
+/* PADDING GAUCHE DE 60PX, utilisé pour le footer */
+.padding-left-footer {
+    padding-left: 60px;
+}
+
+
+/* MARGE HAUTE DE 20 PX */
+.margintop-20px {
+    margin-top: 20px;
+}
+
+/* MARGE HAUTE DE 40 PX */
+.margintop-40px {
+    margin-top: 40px;
+}
+
+/* MARGE GAUCHE DIMINUEE DE 5 PX*/
+.margin-left-minus-5px{
+    margin-left: -5px;
+}
+
+/* HAUTEUR DE LIGNE A 2 EM */
+.line-height-2em {
+    line-height: 2em;
+}
+
+/* ARRIERE PLAN DE COULEUR GRISE */
+.grey-bg {
+    background-color: var(--grey);
+}
+
+/* BORDS ARRONDIS A 20PX */
+.border-radius-20 {
+    border-radius: 20px;
+}
+
+/* STYLISATION BOUTON DE RECHERCHE */
+.input-button-search {
+    background-color: var(--dblue);
+    border: 0px;
+    padding: 16px 10px;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+/* ICONE LOUPE */
+.ico-loupe {
+    color: transparent;
+    font-size: 0;
+}
+
+/* LARGEUR MINIMALE DU FILTRE */
+.filter-min-width {
+    min-width: 643px;
+}
+
+
+/* STYLISATION DES CARDS EN HAUT DESKTOP*/
+.article-top {
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    padding-bottom: 10px;
+}
+
+/*STYLISATION DES IMAGES EN HAUT DESKTOP */
+.image-top {
+    border-radius: 20px 20px 0 0;
+    width: 17vw;
+    min-width: 150px;
+    height: 110px;
+    object-fit: cover;
+}
+
+
+/*STYLISATION DES IMAGES A DROITE DESKTOP */
+.image-right {
+    height: 180px;
+    width: 8vw;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+/* STYLISATION DES CARDS A DROITE DESKTOP */
+.article-right {
+    background-color: white;
+    padding: 5px;
+    padding-bottom: 3px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
+
+/* LARGEUR MINIMALE A 90PX */
+.min-w-90 {
+    min-width: 90px;
+}
+
+/* LARGEUR MINIMALE A 100PX */
+.min-w-110 {
+    min-width: 100px;
+}
+
+.min-w-190 {
+    min-width: 190px;
+}
+
+/* STYLISATION DES IMAGES EN BAS DESKTOP */
+.image-bottom {
+    max-width: 20vw;
+    height: 52vh;
+    min-height: 18vh;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+/*STYLISATION DES CARDS EN BAS DESKTOP */
+.article-bottom {
+    background-color: white;
+    padding-bottom: 3px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-bottom: 40px;
+}
+
+/* PAS DE RETOUR A LA LIGNE */
+.no-wrap {
+    white-space: nowrap;
+}
+
+
+/* STYLISATION LOGO*/
+.logo {
+    width: 60px;
+    object-fit: cover;
+}
+
+/* STYLISATION ICONE INFORMATION */
+.icone-info {
+    font-size: 0.8em;
+    border: 1px solid var(--grey);
+    border-radius: 25px;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+/* STYLISATION DES H1 */
+.h1 {
+    font-size: 1.4em;
+    margin-block-end: 0.4em;
+}
+
+/* STYLISATION DES H2*/
+.h2 {
+    font-size: 1em;
+    font-weight: normal;
+    margin-block-start: 13px;
+    margin-block-end: 26px;
+
+}
+
+/* STYLISATION DES H3*/
+.h3 {
+    font-size: 1.4em;
+}
+
+/* STYLISATION DES H4 DU FOOTER */
+.h4 {
+    font-size: 1.05em;
+    margin-top: 50px;
+}
+
+/* STYLISATION DES H4 EN DEHORS DE CEUX PRESENTS DANS LE FOOTER */
+.h4-marginblock-5px {
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+}
+
+/* MARGIN BLOCK START ET END A 0.5EM */
+.p-margin-0dot5em {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+/* FONT SIZE A 1.1EM */
+.font-size-1dot1em {
+    font-size: 1.1em;
+}
+
+/* FONT SIZE A 1.2EM */
+.font-size-1dot2em {
+    font-size: 1.2em;
+}
+
+
+/* STYLISATION DES LISTES NON ORDONNEES */
+.ul {
+    padding-inline-start: 0px;
+    list-style-type: none;
+}
+
+/* STYLISATION DES ELEMENTS DE LA LISTE ORDONNEE */
+.li {
+    margin-inline-start: 0px;
+}
+
+/* STYLISATION LIENS ET LORSQUE DEJA VISITES */
+.link-black:link,
+.link-visited-black:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* STYLISATION DES LIENS HOVER ET ACTIVE DU MENU ET DU FOOTER*/
+.link-hover-activate-blue:hover,
+.link-hover-activate-blue:active {
+    color: var(--dblue);
+    border-top: 1px var(--dblue) solid;
+    transition: 0.1s;
+}
+
+/* GESTION DU PADDING DES BOUTONS DU MENU */
+.padding-nav-button {
+    padding: 53px 25px 25px 25px;
+}
+
+/* STYLISATION BOUTONS */
+.button {
+    border: 2px solid var(--grey);
+    padding: 9px 20px 8px 20px;
+    border-radius: 25px;
+    background-color: white;
+    font-family: Raleway;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+/* STYLISATION BOUTONS LORS DU SURVOL */
+.button:hover,
+.button:active {
+    border-color: var(--grey);
+    background-color: var(--lblue);
+}
+
+/* STYLISATION DES FIGURES */
+.figure {
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0;
+    width: min-content;
+}
+
+/* stylisation des figcaptions */
+.figcaption {
+    padding: 10px 10px 10px 20px;
+}
+
+/* STYLISATION FORMULAIRE DE RECHERCHE */
+.input-search {
+    border: 2px solid var(--grey);
+    padding: 14px;
+    font-family: Raleway;
+    font-weight: 700;
+}
+
+/* COULEUR DU TEXTE A L INTERIEUR DU CHAMPS DE SAISIE */
+input::placeholder {
+    color: #000000;
+    opacity: 1;
+}
+
+/* STYLISATION BOUTON DE RECHERCHE */
+.button-search {
+    background-color: var(--dblue);
+    border: 0px;
+    padding: 16px 10px;
+    color: white;
+    font-weight: bold;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* ICONE GPS */
+.ico-gps {
+    background-color: var(--grey);
+    padding: 17px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.white-ico {
+    color: white;
+}
+
+
+
+/*
++++++++++++++++++++++++
+RESPONSIVE TABLETTE
+RESPONSIVE TABLETTE
+RESPONSIVE TABLETTE
++++++++++++++++++++++++
+*/
+
+@media screen and (max-width: 992px) {
+
+    /* PASSAGE DU FLEX EN ROW / LIGNE EN TAB */
+    .flex-row-tab {
+        flex-direction: row;
+    }
+
+    /* PASSAGE DU FLEX EN COLUMN / COLONNE EN TAB */
+    .flex-column-tab {
+        flex-direction: column;
+    }
+
+    .flex-alignitems-center-tab {
+        align-items: center;
+    }
+
+    /* SUPPRESSION DE WRAP EN TAB */
+    .flex-nowrap-tab {
+        flex-wrap: nowrap;
+    }
+
+    /* LARGEUR MAXIMALE A 110PX EN TAB */
+    .max-w-120-tab {
+        max-width: 120px;
+    }
+
+    /* LARGEUR A 100% EN TAB*/
+    .width-100-tab {
+        width: 100%;
+    }
+
+    /* LARGEUR A 92% EN TAB */
+    .width-92-tab {
+        width: 92%;
+    }
+
+    /* STYLISATION DE LA LARGEUR DU FILTRE EN TAB */
+    .min-width-btn-filter {
+        min-width: 90%;
+    }
+
+    /* HAUTEUR DE LIGNE A 35PX EN TAB */
+    .line-height-35px-tab {
+        line-height: 35px;
+    }
+
+    /* MARGE HAUTE A 70PX EN TAB*/
+    .margin-top-70px-tab {
+        margin-top: 70px;
+    }
+
+    /* MARGE HAUTE A 40PX EN TAB */
+    .margin-bottom-40px-tab {
+        margin-bottom: 40px;
+    }
+
+    /* PADDING BAS A 20 PX EN TAB*/
+    .padding-bottom-20px-tab {
+        padding-bottom: 20px;
+    }
+
+    /* GAP A 8 POURCENT EN TAB*/
+    .gap8-tab {
+        gap: 8%;
+    }
+
+    /* GAP A 5PX EN TAB */
+    .gap5-tab {
+        gap: 5px;
+    }
+
+    /* FONT SIZE A 1.1EM  EN TAB*/
+    .font-size-1dot1em-tab {
+        font-size: 0.9em;
+    }
+
+    /* TAILLE DES PARAGRAPHES A 0.8 EM EN TAB*/
+    .p {
+        font-size: 0.8em;
+    }
+
+    /* PADDING DU BOUTON EN TAB */
+    .button {
+        padding: 10px 12px 10px 12px;
+    }
+
+    /*STYLISATION DES IMAGES EN HAUT EN TABLETTE EN TAB*/
+    .image-top {
+        width: 25vw;
+        height: 110px;
+        object-fit: cover;
+    }
+
+    /*STYLISATION DES IMAGES A DROITE EN TABLETTE EN TAB*/
+    .image-right {
+        height: 135px;
+        width: 10vw;
+    }
+
+    /* PADDING A L'INTERIEUR DE L'ARTICLE */
+    .padding-inside-article-right {
+        padding-top: 0px;
+        padding-left: 12px;
+        padding-right: 8px;
+        padding-bottom: 8px;
+    }
+
+
+    /* STYLISATION DES IMAGES EN BAS EN TABLETTE */
+    .image-bottom {
+        height: 220px;
+
+    }
+
+    /* STYLISATION DES FIGCAPTIONS */
+    .figcaption {
+        padding: 0px 10px 5px 20px;
+    }
+
+    /* PADDING BAS DU FOOTER */
+    .padding-bottom-footer {
+        padding-bottom: 30px;
+    }
+
+    /* PADDING GAUCHE DU FOOTER */
+    .padding-left-footer {
+        padding-left: 80px;
+    }
+
+
+}
+
+
+
+/*
++++++++++++++++++++++++
+RESPONSIVE MOBILE
+RESPONSIVE MOBILE
+RESPONSIVE MOBILE
++++++++++++++++++++++++
+*/
+@media screen and (max-width: 768px) {
+
+    /* PASSAGE EN FLEX COLUMN EN MOBILE / COLONNE */
+    .flex-column-mob {
+        flex-direction: column;
+    }
+
+    /* PASSAGE EN FLEX COLUMN REVERSE EN MOBILE / COLONNE INVERSEE*/
+    .flex-columnreverse-mob {
+        flex-direction: column-reverse;
+    }
+
+    /* MISE EN WRAP EN MOBILE */
+    .flex-wrap-mob {
+        flex-wrap: wrap;
+    }
+
+    /* ALIGNEMENT HORIZONTAL DES ELEMENTS FLEX AU CENTRE */
+    .flex-center-mob {
+        justify-content: center;
+    }
+
+    /* STYLISATION DES H2*/
+    .h2 {
+        margin-block-start: 6px;
+        margin-block-end: 26px;
+
+    }
+
+
+    /* LARGEUR 100% EN MOBILE */
+    .width-100-mob {
+        width: 100%;
+    }
+
+    /* LARGEUR 95% EN MOBILE */
+    .width-95-mob {
+        width: 95%;
+    }
+
+    /* LARGEUR 83% EN MOBILE*/
+    .width-82-mob {
+        width: 82%;
+    }
+
+    /* LARGEUR 92% EN MOBILE */
+    .width-92-mob {
+        width: 92%;
+    }
+
+    /* LARGEUR 90% EN MOBILE */
+    .width-90-mob {
+        width: 90%;
+    }
+
+    
+
+    /* LARGEUR A 50% EN MOBILE */
+    .width-50-mob {
+        width: 50%;
+    }
+
+    /* LARGEUR MAX A 181PX EN MOB */
+    .max-w-181px-mob {
+        max-width: 181px;
+    }
+
+    /* LARGEUR A 130PX EN MOB*/
+    .width-130px-mob {
+        width: 130px;
+    }
+
+    /* FONT SIZE A 0.8 EM EN MOB */
+    .font-size-0dot7em-mob {
+        font-size: 0.7em;
+    }
+
+    /* FONT SIZE A 1.1EM EN MOB */
+    .font-size-1em-mob {
+        font-size: 1.0em;
+    }
+
+
+    /* DISPLAY NONE / NON VISIBLE EN MOBILE */
+    .display-none-mob {
+        display: none;
+    }
+
+
+    /* DISPLAY BLOCK EN MOBILE */
+    .display-block-mob {
+        display: block;
+    }
+
+    /* GESTION DE LA MARGE POUR LA RECHERCHE EN MOBILE */
+    .margin-recherche-mob {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    /* STYLISATION DE LA LARGEUR DU MENU EN MOBILE */
+    .menu-width {
+        width: 100%;
+    }
+
+
+    /* AJOUT D UNE BORDURE POUR CERTAINS ELEMENTS DE LISTE ORDONNEES / MENU */
+    .li-border-mob {
+        padding-bottom: 25px;
+        border-bottom: 2px var(--grey) solid;
+        width: 50%;
+    }
+
+    /* AJOUT D UNE BORDURE POUR CERTAINS ELEMENTS DE LISTE ORDONNEES / MENU EN HOVER ET ACTIVE*/
+    .li-border-mob:hover,
+    .li-border-mob:active {
+        padding-bottom: 25px;
+        border-bottom: 2px var(--dblue) solid;
+    }
+
+    /* MARGE HAUTE DE 20PX EN MOBILE */
+    .margintop-20px-mob {
+        margin-top: 20px;
+    }
+
+    /* MARGE HAUTE DE 30PX EN MOBILE */
+    .margintop-30px-mob {
+        margin-top: 30px;
+    }
+
+
+    /* MARGE HAUTE DE 40PX EN MOBILE */
+    .margin-top-40px-mob {
+        margin-top: 40px;
+    }
+
+    /* MARGE HAUTE DE 80PX EN MOBILE */
+    .margin-top-80px-mob {
+        margin-top: 80px;
+    }
+
+    /* MARGE HAUTE DE 0 EN MOBILE */
+    .margin-top-0-mob {
+        margin-top: 0px;
+    }
+
+    /* MARGE BASSE DE 0 PX EN MOBILE */
+    .margin-bottom-0-mob {
+        margin-bottom: 0;
+    }
+
+    /* MARGE BASSE DE 5 PX EN MOBILE */
+    .margin-bottom-5px-mob {
+        margin-bottom: 5px;
+    }
+
+    /* MARGE BASSE DE 15 PX EN MOBILE */
+    .margin-bottom-15px-mob {
+        margin-bottom: 15px;
+    }
+
+    /* MARGE BASSE DE 35 PX EN MOBILE */
+    .margin-bottom-35px-mob {
+        margin-bottom: 35px;
+    }
+
+    /* MARGE BASSE DE 30 PX EN MOBILE */
+    .margin-bottom-30px-mob {
+        margin-bottom: 30px;
+    }
+
+    /* MARGIN AUTO POUR CENTRER EN MOBILE */
+    .m-auto {
+        margin: auto;
+    }
+
+    /* PADDING HAUT DE 0 PX EN MOBILE */
+    .padding-top-0-mob {
+        padding-top: 0;
+    }
+
+
+
+    /* PAS D ARRIERE PLAN EN MOBILE */
+    .nobg-mob {
+        background-color: transparent;
+    }
+
+    /* BORDS ARRONDIS SUPPRIMES EN MOBILE */
+    .border-radius-0-mob {
+        border-radius: 0px;
+    }
+
+    /* PADDING POUR LES LIENS DE NAVIGATION DU MENU EN MOBILE*/
+    .padding-nav-button {
+        padding: 30px;
+    }
+
+    /* PADDING POUR LE BOUTON DE GAUCHE EN MOBILE */
+    .p-nav-btn-l {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    /* PADDING POUR LE BOUTON DE DROITE EN MOBILE */
+    .p-nav-btn-r {
+        padding-left: 23px;
+        padding-right: 16px;
+    }
+
+    /* MISE A ZERO DU PADDING GAUCHE ET DROITE 30PX EN MOBILE */
+    .padding-rl-40px {
+        padding: 0;
+    }
+
+    /*
+    /* GAP DE 5 POURCENT EN MOBILE */
+    .gap5-mob {
+        gap: 5%;
+    }
+
+    /* GAP DE 15PX EN MOBILE */
+    .gap15px-mob {
+        gap: 15px;
+    }
+
+    /* ALIGNEMENT DU TEXTE AU CENTRE EN MOBILE*/
+    .textalign-center-mob {
+        text-align: center;
+    }
+
+    /* STYLISATION DES LIENS HOVER ET ACTIVE DU MENU ET DU FOOTER, EN MOBILE*/
+    .link-hover-activate-blue:hover,
+    .link-hover-activate-blue:active {
+        border-bottom: 0px var(--dblue) solid;
+        border-top: 0px;
+
+    }
+
+    /* ICONE GPS EN MOBILE */
+    .ico-gps {
+        padding: 12px;
+        padding-top: 17px;
+    }
+
+    /* STYLISATION DU MOT RECHERCHER EN MOBILE*/
+    .rechercher {
+        display: none;
+    }
+
+    /* ICONE LOUPE EN MOBILE*/
+    .ico-loupe {
+        color: white;
+        font-size: 18px;
+    }
+
+
+    /* STYLISATION BOUTON DANS HEADER LIGNE 4 EN MOBILE*/
+    .button {
+        width: 48.5%;
+        min-width: 130px;
+        margin-bottom: 10px;
+        height: 50px;
+        border: 2px solid var(--grey);
+        padding: 6px 15px 6px 15px;
+        font-size: 0.9em;
+        justify-content: flex-start;
+        gap: 5px;
+    }
+
+    /* STYLISATION DE FIGURE EN MOBILE*/
+    .figure {
+        width: 100%;
+    }
+
+    /* STYLISATION DES IMAGES DE DROITE EN MOBILE*/
+    .image-right {
+        width: 30vw;
+        height: 120px;
+    }
+
+
+    /* STYLISATION DES ARTICLES TOP */
+    .article-top {
+        margin-bottom: 10px;
+    }
+
+    /* STYLISATION DES IMAGES DU HAUT EN MOBILE*/
+    .image-top {
+        height: 14vh;
+        width: 100%;
+        min-width: 147px;
+    }
+
+    /* STYLISATION DES IMAGES DU BAS EN MOBILE*/
+    .image-bottom {
+        height: 17vh;
+        min-height: 17vh;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* STYLISATION DES ARTICLES BAS */
+    .article-bottom {
+        margin-bottom: 20px;
+    }
+
+    /* MARGES BASSES A 80PX */
+    .margin-bottom-40px-mob {
+        margin-bottom: 80px;
+    }
+
+
+    /* stylisation des figcaptions */
+    .figcaption {
+        padding: 0px 10px 0px 20px;
+    }
+
+    /* HAUTEUR DE LIGNE A 35PX EN MOBILE */
+    .line-height-35px-mob {
+        line-height: 35px;
+    }
+
+    /* PADDING BAS DU FOOTER */
+    .padding-bottom-footer {
+        padding-bottom: 0px;
+    }
+
+    /* PADDING GAUCHE DU FOOTER */
+    .padding-left-footer {
+        padding-left: 0px;
+    }
+
+}
